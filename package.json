@@ -1,0 +1,19 @@
+{
+  "name": "usb-detection-cli",
+  "version": "1.0.0",
+  "description": "usb-detection",
+  "main": "contact.js",
+  "scripts": {
+    "test": "node contact.js"
+  },
+  "keywords": [
+    "usb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.1.0",
+    "commander": "^4.0.1",
+    "usb-detection": "^4.7.0"
+  }
+}
