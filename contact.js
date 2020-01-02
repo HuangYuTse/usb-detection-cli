@@ -15,7 +15,7 @@ colors.setTheme({
     debug: 'blue',
     error: 'red'
   });
-let logo = "           _               _      _            _            \n  _   _ ___| |__         __| | ___| |_ ___  ___| |_ ___ _ __ \n | | | / __| '_ \\ _____ / _` |/ _ \\ __/ _ \\/ __| __/ _ \\ '__|\n | |_| \\__ \\ |_) |_____| (_| |  __/ ||  __/ (__| ||  __/ |   \n  \\__,_|___/_.__/       \\__,_|\\___|\\__\\___|\\___|\\__\\___|_|\n".logo
+const logo = "           _               _      _            _            \n  _   _ ___| |__         __| | ___| |_ ___  ___| |_ ___ _ __ \n | | | / __| '_ \\ _____ / _` |/ _ \\ __/ _ \\/ __| __/ _ \\ '__|\n | |_| \\__ \\ |_) |_____| (_| |  __/ ||  __/ (__| ||  __/ |   \n  \\__,_|___/_.__/       \\__,_|\\___|\\__\\___|\\___|\\__\\___|_|\n".logo
 // Detect add/insert
 /* 
            _               _      _            _            
@@ -62,18 +62,24 @@ program
     .option('-t, --teatype [teatype]', '給我一杯 [紅茶]', '紅茶')
     .parse(process.argv);
 
-console.log(logo);
-if (program.list)
-    if (program.list=='dec')
-        task();
-    else if (program.list=='hex')
-        console.log('hex');
-    else if (program.list=='bin')
-        console.log('bin');
-    else
-        console.log('else');
-if (program.vers)
-    console.log(version.info);
- 
+
+function main() {
+        console.log(logo);
+    if (program.list)
+        if (program.list=='dec')
+            task();
+        else if (program.list=='hex')
+            console.log('hex');
+        else if (program.list=='bin')
+            console.log('bin');
+        else
+            console.log('else');
+    if (program.vers)
+        console.log(version.info);
+}
+if (require.main === module) {
+    main();
+  }
+  module.exports = task;
 
 

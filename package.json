@@ -5,7 +5,7 @@
   "main": "contact.js",
   "scripts": {
     "start": "node contact.js",
-    "test":"mocha   --exit"
+    "test":"mocha "
   },
   "keywords": [
     "usb"
