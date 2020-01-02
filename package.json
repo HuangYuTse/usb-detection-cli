@@ -4,7 +4,8 @@
   "description": "usb-detection",
   "main": "contact.js",
   "scripts": {
-    "test": "node contact.js"
+    "start": "node contact.js",
+    "test":"mocha   --exit"
   },
   "keywords": [
     "usb"
@@ -16,5 +17,8 @@
     "colors": "^1.4.0",
     "commander": "^4.0.1",
     "usb-detection": "^4.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
   }
 }
