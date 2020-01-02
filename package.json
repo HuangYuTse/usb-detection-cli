@@ -4,7 +4,7 @@
   "description": "usb-detection",
   "main": "contact.js",
   "scripts": {
-    "start": "node contact.js",
+    "start": "node contact.js ",
     "test":"mocha "
   },
   "keywords": [
