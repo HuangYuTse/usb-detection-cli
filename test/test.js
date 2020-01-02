@@ -5,3 +5,9 @@ describe('測試是否能test', function(){
     setImmediate(done);
   });
 });
+describe('測試 task 時間', function(){ 
+    it('task 時間', function(done){
+      contact.task();
+      setImmediate(done);
+    });
+  });

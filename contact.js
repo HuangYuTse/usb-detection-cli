@@ -80,6 +80,6 @@ function main() {
 if (require.main === module) {
     main();
   }
-  module.exports = task;
+  module.exports.task = task;
 
 
