@@ -1,11 +1,11 @@
 {
   "name": "usb-detection-cli",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "usb-detection",
   "main": "contact.js",
   "scripts": {
     "start": "node contact.js ",
-    "test":"mocha "
+    "test": "mocha "
   },
   "keywords": [
     "usb"
